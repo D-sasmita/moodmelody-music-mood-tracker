@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.MoodMelody" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/gradient_purple</item>
+        <item name="colorPrimaryVariant">@color/gradient_purple_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- UPDATED: Status bar configuration - make it blend with gradient -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <!-- Keep light status bar icons for better visibility on purple -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+
+        <!-- Popup menu styling -->
+        <item name="popupMenuStyle">@style/CustomPopupMenuStyle</item>
+        <item name="actionOverflowMenuStyle">@style/CustomOverflowMenuStyle</item>
+    </style>
+
+    <!-- Main Theme -->
+    <style name="Theme.MoodMelody" parent="Base.Theme.MoodMelody" />
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.MoodMelody.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/gradient_purple</item>
+        <item name="android:navigationBarColor">@color/gradient_deep_purple</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Toolbar Theme (for the 3-dot icon color) -->
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <!-- Toolbar Popup Theme (for the menu itself) -->
+    <style name="ToolbarPopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <!-- Custom Popup Menu Style -->
+    <style name="CustomPopupMenuStyle" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/popup_menu_background</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- Custom Overflow Menu Style -->
+    <style name="CustomOverflowMenuStyle" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:popupBackground">@drawable/popup_menu_background</item>
+        <item name="android:dropDownVerticalOffset">4dp</item>
+    </style>
+
+</resources>

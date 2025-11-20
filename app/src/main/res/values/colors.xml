@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- MoodMelody Purple Theme Colors -->
+    <color name="gradient_purple_light">#8B7AC7</color>
+    <color name="gradient_purple">#7B68BE</color>
+    <color name="gradient_purple_dark">#6B5CA8</color>
+    <color name="gradient_deep_purple">#5D4E96</color>
+    <color name="bottom_nav_color">#6e26d4</color>
+
+    <!-- Transparency Variants -->
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="white_40">#66FFFFFF</color>
+    <color name="white_30">#4DFFFFFF</color>
+
+    <!-- Mood Selection Screen -->
+    <color name="mood_circle_bg">#99FFFFFF</color>
+    <color name="mood_circle_border">#66FFFFFF</color>
+    <color name="button_color">#7B68BE</color>
+
+    <!-- Mood Circle Background Colors (from your image) -->
+    <color name="mood_happy_bg">#FFE67E</color>      <!-- Yellow -->
+    <color name="mood_sad_bg">#A8D8EA</color>        <!-- Light Blue -->
+    <color name="mood_relaxed_bg">#B8E6D5</color>    <!-- Mint Green -->
+    <color name="mood_party_bg">#FFB3BA</color>      <!-- Light Pink -->
+    <color name="mood_energetic_bg">#D4B5E6</color>  <!-- Light Purple -->
+    <color name="mood_romantic_bg">#FFD88A</color> <!-- Light Orange -->
+
+    <!-- Recommendations Screen -->
+    <color name="playlist_card_bg">#CC7B68BE</color>
+    <color name="bottom_nav_bg">#CC6B5CA8</color>
+
+    <!-- History Screen -->
+    <color name="history_card_bg">#CC7B68BE</color>
+
+    <color name="cardview_dark_background">#424242</color>
+</resources>

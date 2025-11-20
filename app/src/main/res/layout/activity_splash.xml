@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".SplashActivity">
+
+    <!-- Music Note Icon Top Right -->
+    <ImageView
+        android:id="@+id/ivMusicNote"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/music_note_icon"
+        android:src="@drawable/ic_music_note"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <!-- Center Ripple Animation Container -->
+    <FrameLayout
+        android:id="@+id/rippleContainer"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Outer Ripple Circle -->
+        <View
+            android:id="@+id/rippleOuter"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_ripple" />
+
+        <!-- Middle Ripple Circle -->
+        <View
+            android:id="@+id/rippleMiddle"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_ripple" />
+
+        <!-- Inner Circle -->
+        <View
+            android:id="@+id/rippleInner"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_solid" />
+
+        <!-- Horizontal Line with gradient effect -->
+        <View
+            android:id="@+id/horizontalLine"
+            android:layout_width="260dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@drawable/gradient_line" />
+
+    </FrameLayout>
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rippleContainer" />
+
+    <!-- Tagline -->
+    <TextView
+        android:id="@+id/tvTagline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/tagline"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAppName" />
+
+    <!-- Animated Bars Icon -->
+    <LinearLayout
+        android:id="@+id/animatedBars"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/ivUniversityLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:id="@+id/bar1"
+            android:layout_width="10dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/rounded_bar" />
+
+        <View
+            android:id="@+id/bar2"
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/rounded_bar" />
+
+        <View
+            android:id="@+id/bar3"
+            android:layout_width="10dp"
+            android:layout_height="35dp"
+            android:background="@drawable/rounded_bar" />
+
+    </LinearLayout>
+
+    <!-- University Logo with white background -->
+    <ImageView
+        android:id="@+id/ivUniversityLogo"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/university_logo"
+        android:src="@drawable/university_logo"
+        android:scaleType="fitCenter"
+        android:background="@drawable/white_rounded_background"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@id/tvJoinText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Bottom Join Text -->
+    <LinearLayout
+        android:id="@+id/tvJoinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="6dp"
+            android:contentDescription="@string/music_note_icon"
+            android:src="@drawable/ic_music_note_small"
+            app:tint="@color/white_80" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/join_text"
+            android:textColor="@color/white_80"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">MoodMelody</string>
+    <string name="tagline">Find the perfect music for your mood</string>
+    <string name="join_text">Join 1M+ music lovers already on MoodMelody</string>
+    <string name="music_note_icon">Music Note Icon</string>
+    <string name="university_logo">University Logo</string>
+
+    <!-- Mood Selection Screen -->
+    <string name="mood_title">How are you feeling?</string>
+    <string name="mood_subtitle">We\'ll recommend playlists that match your vibe right now 🎵</string>
+
+    <!-- Mood Labels -->
+    <string name="mood_happy">Happy</string>
+    <string name="mood_sad">Sad</string>
+    <string name="mood_energetic">Energetic</string>
+    <string name="mood_calm">Calm</string>
+    <string name="mood_chill">Chill</string>
+    <string name="mood_romantic">Romantic</string>
+    <string name="mood_party">Party</string>
+    <string name="mood_relaxed">Relaxed</string>
+
+    <!-- Mood Emojis -->
+    <string name="mood_happy_emoji">🙂</string>
+    <string name="mood_sad_emoji">😢</string>
+    <string name="mood_energetic_emoji">🔥</string>
+    <string name="mood_calm_emoji">🌙</string>
+    <string name="mood_chill_emoji">😎</string>
+    <string name="mood_romantic_emoji">💗</string>
+    <string name="mood_party_emoji">🎉</string>
+    <string name="mood_relaxed_emoji">😌</string>
+
+    <!-- Button -->
+    <string name="get_recommendations">Get Recommendations</string>
+
+
+    <!-- Recommendations Screen -->
+    <string name="recommended_for_you">Recommended for You</string>
+    <string name="you_chose_mood">You chose %1$s %2$s</string>
+    <string name="album_cover">Album Cover</string>
+    <string name="play_playlist">Play Playlist</string>
+    <string name="add_to_favorites">Add to Favorites</string>
+    <string name="back_button">Back</string>
+
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_favorites">Favorites</string>
+    <string name="nav_history">History</string>
+
+    <!-- History Screen -->
+    <string name="history_title">History</string>
+    <string name="past_moods">Past Moods</string>
+    <!-- Favorites Screen -->
+    <string name="favorites_title">Favorites</string>
+    <string name="your_favorites">Your Favorites</string>
+    <string name="no_favorites_yet">No Favorites Yet</string>
+    <string name="start_adding_favorites">Start adding playlists to your favorites by tapping the heart icon</string>
+    <string name="youtube_api_key">AIzaSyANAk_qObi6lXyFsx0Qem-An2fL16dF4r8</string>
+
+
+        <!-- About Screen - App Info -->
+    <string name="info">Info</string>
+        <string name="app_icon">App Icon</string>
+        <string name="version_1_0">Version 1.0</string>
+        <string name="about_description">MoodMelody is your personal music companion that understands your emotions. Discover the perfect songs that match your current mood - whether you\'re feeling happy, sad, energetic, or calm. Let music enhance your emotional journey!</string>
+
+
+
+        <!-- Developers Section -->
+        <string name="meet_the_team">Meet The Team</string>
+    <string name="team_subtitle">The minds behind MoodMelody 🎶</string>
+        <string name="email_icon">Email Icon</string>
+
+    !-- Developer 1 - Student -->
+    <string name="developer1_name">Sasmita Das</string>
+    <string name="developer1_role">B.Tech Computer Engineering</string>
+    <string name="developer1_email">sasmitadas.122223@marwadiuniversity.ac.in</string>
+
+    <!-- Developer 2 - Student -->
+    <string name="developer2_name">Noopur Manvar</string>
+    <string name="developer2_role">B.Tech Computer Engineering</string>
+
+    <string name="developer2_email">noopur.manvat121692@marwadiuniversity.ac.in</string>
+
+    <!-- Developer 3 - Faculty -->
+    <string name="developer3_name">Prof. Jigar Dave</string>
+    <string name="developer3_role">Assistant professor, FOET, Marwadi University - Project Guide and  Mentor</string>
+    <string name="developer3_email">jigar.dave@marwadieducation.edu.in</string>
+
+        <!-- Footer -->
+        <string name="copyright">© 2025 MoodMelody Team. All rights reserved.</string>
+
+</resources>

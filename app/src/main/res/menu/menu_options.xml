@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_about"
+        android:title="About Us"
+        android:icon="@drawable/ic_info"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_share"
+        android:title="Share App"
+        android:icon="@drawable/ic_share"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_write_us"
+        android:title="Write to Us"
+        android:icon="@drawable/ic_email"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_rate_us"
+        android:title="Rate Us"
+        android:icon="@drawable/ic_star"
+        app:showAsAction="never" />
+
+</menu>

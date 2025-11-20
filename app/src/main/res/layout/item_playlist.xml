@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardBackgroundColor="@color/playlist_card_bg"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Album Cover Image -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardAlbumCover"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivAlbumCover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/album_cover"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder_album" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Playlist Title -->
+        <TextView
+            android:id="@+id/tvPlaylistTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="60dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Uplifting Beats"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardAlbumCover"
+            app:layout_constraintTop_toTopOf="@id/cardAlbumCover" />
+
+        <!-- Genre/Category -->
+        <TextView
+            android:id="@+id/tvGenre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="60dp"
+            android:fontFamily="sans-serif"
+            android:text="Electronic Dance Music"
+            android:textColor="@color/white_80"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardAlbumCover"
+            app:layout_constraintTop_toBottomOf="@id/tvPlaylistTitle" />
+
+        <!-- Song Count & Duration -->
+        <TextView
+            android:id="@+id/tvSongInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="60dp"
+            android:fontFamily="sans-serif"
+            android:text="12 songs • 45 min"
+            android:textColor="@color/white_80"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/cardAlbumCover"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardAlbumCover"
+            app:layout_constraintTop_toBottomOf="@id/tvGenre" />
+
+        <!-- Play Button -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabPlay"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="@string/play_playlist"
+            app:backgroundTint="@color/white"
+            app:fabSize="mini"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_play"
+            app:tint="@color/gradient_purple" />
+
+        <!-- Favorite/Heart Button -->
+        <ImageButton
+            android:id="@+id/btnFavorite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/add_to_favorites"
+            android:padding="8dp"
+            android:src="@drawable/ic_heart_outline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fabPlay"
+            app:tint="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

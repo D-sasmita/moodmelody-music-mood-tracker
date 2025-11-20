@@ -1,0 +1,28 @@
+<resources>
+    <style name="Base.Theme.MoodMelody" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/gradient_purple</item>
+        <item name="colorPrimaryVariant">@color/gradient_purple_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Status bar configuration -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <!-- Popup menu styling -->
+        <item name="popupMenuStyle">@style/CustomPopupMenuStyle</item>
+        <item name="actionOverflowMenuStyle">@style/CustomOverflowMenuStyle</item>
+    </style>
+
+    <!-- Custom Popup Menu Style -->
+    <style name="CustomPopupMenuStyle" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/popup_menu_background</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- Custom Overflow Menu Style -->
+    <style name="CustomOverflowMenuStyle" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:popupBackground">@drawable/popup_menu_background</item>
+        <item name="android:dropDownVerticalOffset">4dp</item>
+    </style>
+</resources>
