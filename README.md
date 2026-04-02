@@ -18,7 +18,7 @@ The app solves a simple problem: users often don’t know what music suits their
 - 🎧 Get music recommendations based on mood  
 - 📱 Clean and intuitive Android UI  
 - 🔄 Smooth user interaction  
-- 📊 Mood tracking (if implemented)  
+- 📊 Mood tracking 
 - 💡 Simple and user-friendly experience  
 
 ---
